@@ -20,10 +20,9 @@ buttonsArray.forEach(btn => {
             display.value = string;
         }
         else{
-            string += e.target.innerHTML;
+            string = string + e.target.innerHTML;
+            // string += e.target.innerHTML;
             display.value = string;
-
-            console.log(e.target.innerHTML);
         }
     });
 });
